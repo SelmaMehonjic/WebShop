@@ -6,7 +6,7 @@ namespace TodoApi.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.Sql("UPDATE Users SET IsAdmin = 1 WHERE UserName = 'selma' ");
+            migrationBuilder.Sql("UPDATE Users SET IsAdmin = '1' WHERE UserName = 'selma' ");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

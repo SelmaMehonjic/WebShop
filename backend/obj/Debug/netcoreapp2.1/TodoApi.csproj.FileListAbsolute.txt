@@ -68,3 +68,17 @@ C:\Users\selma\OneDrive\Desktop\WebShop sa gita\backend\obj\Debug\netcoreapp2.1\
 C:\Users\selma\OneDrive\Desktop\WebShop sa gita\backend\obj\Debug\netcoreapp2.1\TodoApi.RazorTargetAssemblyInfo.cache
 C:\Users\selma\OneDrive\Desktop\WebShop sa gita\backend\obj\Debug\netcoreapp2.1\TodoApi.dll
 C:\Users\selma\OneDrive\Desktop\WebShop sa gita\backend\obj\Debug\netcoreapp2.1\TodoApi.pdb
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\bin\Debug\netcoreapp2.1\TodoApi.deps.json
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\bin\Debug\netcoreapp2.1\TodoApi.runtimeconfig.json
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\bin\Debug\netcoreapp2.1\TodoApi.runtimeconfig.dev.json
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\bin\Debug\netcoreapp2.1\TodoApi.dll
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\bin\Debug\netcoreapp2.1\TodoApi.pdb
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\obj\Debug\netcoreapp2.1\TodoApi.csprojAssemblyReference.cache
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\obj\Debug\netcoreapp2.1\TodoApi.csproj.CoreCompileInputs.cache
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\obj\Debug\netcoreapp2.1\TodoApi.RazorAssemblyInfo.cache
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\obj\Debug\netcoreapp2.1\TodoApi.RazorAssemblyInfo.cs
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\obj\Debug\netcoreapp2.1\TodoApi.AssemblyInfoInputs.cache
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\obj\Debug\netcoreapp2.1\TodoApi.AssemblyInfo.cs
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\obj\Debug\netcoreapp2.1\TodoApi.RazorTargetAssemblyInfo.cache
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\obj\Debug\netcoreapp2.1\TodoApi.dll
+C:\Users\selma\OneDrive\Desktop\ProjekatSaGita\WebShop\backend\obj\Debug\netcoreapp2.1\TodoApi.pdb

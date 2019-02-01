@@ -14938,11 +14938,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\selma\\OneDrive\\Desktop\\WebShop sa gita\\backend\\TodoApi.csproj",
+      "projectUniqueName": "C:\\Users\\selma\\OneDrive\\Desktop\\ProjekatSaGita\\WebShop\\backend\\TodoApi.csproj",
       "projectName": "TodoApi",
-      "projectPath": "C:\\Users\\selma\\OneDrive\\Desktop\\WebShop sa gita\\backend\\TodoApi.csproj",
+      "projectPath": "C:\\Users\\selma\\OneDrive\\Desktop\\ProjekatSaGita\\WebShop\\backend\\TodoApi.csproj",
       "packagesPath": "C:\\Users\\selma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\selma\\OneDrive\\Desktop\\WebShop sa gita\\backend\\obj\\",
+      "outputPath": "C:\\Users\\selma\\OneDrive\\Desktop\\ProjekatSaGita\\WebShop\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
