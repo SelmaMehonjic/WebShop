@@ -1,0 +1,9 @@
+.left {
+margin-right:10px;
+}
+mat-icon{
+    color:#f44242;
+}
+mat-icon:hover {
+    color: lightgray;
+}

@@ -1,0 +1,12 @@
+<br>
+      <div class="thumbnails">
+          <div class="card left" style="width: 21rem" >
+              <img src={{pr.picture}} alt="" class="img-responsive" style="height:150px "  [routerLink]="['detail', pr.id]"  >
+              <div class="card-body">
+                <h4 class="card-title">{{pr.name}}</h4>         
+                <mat-icon  [routerLink]="['update', pr.id]" style="cursor: pointer;">edit</mat-icon>
+                <mat-icon *ngIf="isUserAdmin === 'true' " (click)="onDelete(pr.id)" style="cursor: pointer;">remove_circle</mat-icon>
+            </div>            
+            </div>   
+         
+</div>

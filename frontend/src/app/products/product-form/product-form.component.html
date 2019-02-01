@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6">
+      <form (ngSubmit)="onSubmit()" #f="ngForm" (click)="onclick()">
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="Ime" name="ime" [(ngModel)]="product.name" required #name (keydown)="onClickName(name.value)">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="price" name="price" [(ngModel)]="product.price" required #price (keydown)="onClickprice(price.value)">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Fotografija" name="foto" [(ngModel)]="product.picture" required #picture
+              (keydown)="onClickpicture(picture.value)">
+          </mat-form-field>
+          <mat-form-field>
+            <textarea matInput placeholder="Opis" name="opis" [(ngModel)]="product.description" #description (keydown)="onClickdescription(description.value)"></textarea>
+          </mat-form-field>
+          <!-- <router-outlet></router-outlet> -->
+          <div class="row">
+            <div class="col-md-10">
+              <mat-form-field>
+                <mat-select name="category" placeholder="Kategorija" required [(ngModel)]="product.categoryId"
+                  #category required>
+                  <mat-option (click)="onClickCategory(category.value)" [value]="cat.id" *ngFor="let cat of categories ">{{cat.name}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-md-2">
+              <button matTooltip="Dodaj novu kategoriju" routerLink="/addCategory" (click)="AddCategory()" aria-label="Button that displays a tooltip when focused or hovered over"
+                mat-mini-fab color="primary" class="pull-right">
+                <mat-icon>add</mat-icon>
+              </button>
+            </div>
+          </div>
+          <button mat-raised-button color="primary" type="submit" [disabled]="!f.valid">Sacuvaj</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+.left {
+    margin-right:30px ;
+    }
+    mat-icon{
+        color:#f44242;
+    }
+    mat-icon:hover {
+        color: lightgray;
+    }
+
+      .example-card {
+        width: 250px;
+        height: 350px;
+        max-width: 300px;
+        max-height: 350px ;
+      }
+      .card-column{
+        margin-right: 20px !important;
+      }
+      img {
+        width: 180px !important;
+        height: 180px !important;
+        margin:15px 15px !important
+      }
+      mat-paginator {
+        margin-top:20px;
+        background-color:lightgrey;
+        position: fixed;
+        bottom:0;
+        height: 50px;
+      }

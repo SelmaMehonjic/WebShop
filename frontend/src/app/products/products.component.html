@@ -1,0 +1,53 @@
+<div class="container">
+  <router-outlet></router-outlet>
+  <div class="row">
+    <div class="col-md-8">
+      <form class="example-form">
+        <mat-form-field class="example-full-width" style="width: 100%">
+          <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" (keyup)="onSearch(check.value)"
+            name="check" #trazi [matAutocomplete]="auto">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+
+    </div>
+    <div class="col-md-4">
+      <form>
+        <mat-form-field style="width: 100%">
+          <mat-select name="sort" placeholder="Sort By">
+            <mat-option *ngFor="let sortOption of sortArray" (click)="onSort(sortOption)">{{sortOption}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </div>
+  </div>
+  <mat-tab-group (selectedTabChange)=" onChangeTab($event)">
+    <mat-tab label="All products"> </mat-tab>
+    <mat-tab *ngFor="let cat of categories" label="{{cat.name}}"> </mat-tab>
+  </mat-tab-group>
+  <br>
+  <div class="row">
+    <br>
+    <div class="column-md-6 card-column " *ngFor=" let pr of products|  slice: lowValue : highValue">
+      <mat-card class="example-card">
+        <img mat-card-image src="{{pr.picture}}" [routerLink]="['detail', pr.id]">
+        <mat-card-content>
+          <p>
+            {{pr.name}}
+          </p>
+          <p>{{pr.price}}</p>
+          <mat-icon *ngIf="isUserAdmin === 'True' " [routerLink]="['update', pr.id]" style="cursor: pointer;">edit</mat-icon>
+          <mat-icon *ngIf="isUserAdmin === 'True' " (click)="onDelete(pr.id)" style="cursor: pointer;">remove_circle</mat-icon>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <br>
+
+  </div>
+</div>
+<mat-paginator style="width: 100%" [length]="products.length" #paginator [pageSize]="pageSize" (page)="pageEvent = getPaginatorData($event)">
+</mat-paginator>

@@ -1,0 +1,17 @@
+
+  .change {
+    color:red;
+    font-size: 30px;
+    
+  }
+  .example-card {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  .card-column{
+    margin-right: 20px !important;
+  }
+  img {
+    width: 250px !important;
+    margin:15px 15px !important
+  }

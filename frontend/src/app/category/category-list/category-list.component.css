@@ -1,0 +1,13 @@
+table {
+    width: 60%;
+    margin:0 auto;
+  }
+  th.mat-header-cell {
+    font-weight: bold;
+  }
+  .mat-row:hover {
+    background-color:rgb(192, 197, 206);
+  }
+  .button {
+    margin-right:245px;
+  }

@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h4>Dodaj novu kategoriju</h4>
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <mat-form-field class="right" >
+          <input matInput placeholder="Naziv kategorije" [(ngModel)]="category.name" name="nova" required>
+        </mat-form-field>
+        <mat-form-field class="right">
+          <input matInput placeholder="Opis kategorije" [(ngModel)]="category.description" name="novaDesc" required>
+        </mat-form-field>
+        <br>
+        <div class="right">
+          <button mat-raised-button color="primary" type="submit" [disabled]="!f.valid">Sacuvaj</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4"  *ngIf="show">
+      <h4>Add new products in new category</h4> <button mat-mini-fab color="primary" class=" button" (click)="newProducts()">
+        <mat-icon>add</mat-icon>
+      </button>
+      <br>
+      <h4>Add existing products in new category</h4> <button mat-mini-fab color="primary" class="pull-right button"
+      (click)="changeCategory()">
+      <mat-icon>add</mat-icon>
+    </button>
+    </div> 
+  </div>
+  <!-- <div class="row">
+    <div  class="col-md-6">
+        <h4>Dodaj novi product u novu kategoriju</h4>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-6">
+        <h4>Dodaj postojece producte u novu kategoriju</h4>
+      <mat-form-field class="select">
+        <mat-select placeholder="Toppings" [formControl]="toppings" multiple>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div> -->
+</div>
+<hr>
+<div class="row" *ngIf="show">
+  <div class="col-md-1"></div>
+  <div class="col-md-5">
+    <div *ngIf="showForm">
+      <router-outlet></router-outlet>
+    </div>
+    <hr>
+  </div>
+  <div class="col-md-2"></div>
+  <div class="col-md-3">
+    <div *ngIf="showMultipleSelect">
+      <mat-form-field class="select">
+        <mat-select placeholder="productList" multiple [(ngModel)]="selectedProduct">
+          <mat-option *ngFor="let product of productList" (click)="onChangeCategoryOfProduct()" [value]="product">{{product.name}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+      <br>
+      <div class="column-md-6 card-column " *ngFor=" let pr of selectedProduct">
+        <mat-card class="example-card">
+          <img mat-card-image src="{{pr.picture}}" style="height:150px">
+          <mat-card-content>
+            <p>
+              {{pr.name}}
+            </p>
+            <p>{{pr.price}}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <br>
+    </div>
+    <div *ngIf="changeCategoryofProduct">
+    <button mat-raised-button color="primary" type="submit" (click)="save()" >Save</button>
+    </div>
+  </div>

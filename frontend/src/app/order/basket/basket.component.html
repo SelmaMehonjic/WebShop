@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <a *ngFor="let el of  orderProduct" style="cursor:pointer;" class="list-group-item clearfix"  routerLinkActive="active">
+                <div class="pull-left">
+                    <h4 class="List-group-item-heading">{{el.product.name}}</h4>
+                    <button mat-stroked-button color="primary" (click)="buy(el)" style="width: 49%">Buy</button>
+                    <button mat-stroked-button color="primary" (click)="Ukloni(el)" style="width: 49%">Remove</button>
+                </div>
+                <span class="pull-right">
+                    <img src={{el.product.picture}} alt="" class="img-responsive" style="max-height:50px">
+                </span>
+            </a>
+            <hr>
+        </div>
+
+        <div class="col-md-7" >
+            <router-outlet></router-outlet>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<mat-toolbar>
+  <div>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div>
+    <a routerLink="/">LOGO</a>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+    <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+      <li *ngIf="!loggedIn()"> 
+        <a routerLink="/register">Sign Up</a>
+        <a>
+          <mat-icon routerLink="/register">person_add</mat-icon>
+        </a>
+      </li>
+      <li *ngIf="!loggedIn()">
+        <a routerLink="/auth">Log In</a>
+        <a>
+          <mat-icon routerLink="/auth">person_add</mat-icon>
+        </a>
+      </li>
+      <li *ngIf="loggedIn()" (click)="loggedOut()">
+        <a routerLink="/">Log Out</a>
+        <a>
+          <mat-icon routerLink="/auth">person_add</mat-icon>
+        </a>
+      </li>
+      <li>
+        <a href="#" routerLink="/favorite">Favorite</a>
+        <a href="#">
+          <mat-icon routerLink="/favorite" [ngClass]="{'change':bool === true}">favorite</mat-icon>
+        </a>
+      </li>
+      <li>
+        <a href="#" routerLink="/bought">Basket</a>
+        <a href="#">
+          <mat-icon routerLink="/bought" >shopping_basket</mat-icon>
+        </a>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>
+<br>

@@ -1,0 +1,5 @@
+  <form  #loginForm = "ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()" >
+      <input  class="form-control mr-sm-2" type="text" placeholder="Name" name="name" required [(ngModel)]="user.name" >
+      <input class="form-control mr-sm-2" type="password" placeholder="Password" name="password" required [(ngModel)]="user.password">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [disabled]="!loginForm.valid" >Login</button>
+    </form>

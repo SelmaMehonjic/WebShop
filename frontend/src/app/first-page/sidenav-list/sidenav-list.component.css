@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    /* color: white; */
+  }
+  
+  a:hover,
+  a:active {
+    color: lightgray;
+  }
+  .bottom {
+    color:blue;
+    position: fixed;
+    bottom: 15px;
+  }
+  mat-nav-list mat-list-item a {
+    color:#6541f4;
+  }
+  mat-nav-list mat-list-item mat-icon {
+    color:#6541f4;
+
+  }
