@@ -7,7 +7,6 @@ namespace TodoApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.Sql(@"
-            USE [WebAppNew]
 GO
 SET IDENTITY_INSERT [dbo].[Categories] ON 
 GO
